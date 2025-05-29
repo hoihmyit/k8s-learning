@@ -31,3 +31,7 @@ kubectl get svc nginx-service
 
 ### Access to nginx via:
 http://localhost:8088
+
+### Clean up
+kubectl delete -f sample-nginx/deployment.yaml
+kubectl delete -f sample-nginx/service.yaml
