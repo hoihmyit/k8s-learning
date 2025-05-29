@@ -20,18 +20,26 @@
 
 
 ### Run the deployment.yml
+```
 kubectl apply -f sample-nginx/deployment.yaml
+```
 
 ### Run the service.yml
+```
 kubectl apply -f sample-nginx/service.yaml
+```
 
 ### Verify Deployment and Service
+```
 kubectl get pods
 kubectl get svc nginx-service
+```
 
 ### Access to nginx via:
 http://localhost:8088
 
 ### Clean up
+```
 kubectl delete -f sample-nginx/deployment.yaml
 kubectl delete -f sample-nginx/service.yaml
+```
